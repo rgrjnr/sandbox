@@ -1,0 +1,7 @@
+{
+  "name": "Entrevista Técnica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
