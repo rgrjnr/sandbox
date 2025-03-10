@@ -10,11 +10,4 @@ export const useFavoriteStore = defineStore('favorites', {
 			// TODO: Implement this
 		},
 	},
-
-	getters: {
-		favoriteEvents: (state) => {
-			// TODO: Implement this
-			return [];
-		},
-	},
 });
