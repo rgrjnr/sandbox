@@ -85,3 +85,41 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-step-900: #e6e6e6;
   --ion-color-step-950: #f2f2f2;
 }
+
+.event {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--ion-color-step-100);
+  border-radius: 0.5rem;
+}
+
+.event-thumbnail {
+  background: var(--ion-color-step-200);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.25rem;
+}
+
+.event-name {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.event-favorite-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
