@@ -7,6 +7,7 @@
 		</ion-header>
 		<ion-content :fullscreen="true"
 			><div class="events">
+				{{ favoriteStore }}
 				<EventCard
 					v-for="event in favoriteEvents"
 					:key="event.id"

@@ -9,7 +9,10 @@
 			<div class="event-address">{{ props.event.location }}</div>
 		</div>
 
-		<ion-icon :icon="isFavorite ? heart : heartOutline" class="event-favorite-button"></ion-icon>
+		<ion-icon
+			:icon="isFavorite ? heart : heartOutline"
+			class="event-favorite-button"
+			@click="favoriteStore.toggleFavorite(props.event.id)"></ion-icon>
 	</div>
 </template>
 
@@ -30,6 +33,7 @@
 			name: string;
 			date: string;
 			location: string;
+			id: number;
 		};
 	}>();
 </script>

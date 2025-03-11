@@ -19,8 +19,16 @@
 				</ul>
 				<h2 id="implementation-tasks">Implementation Tasks</h2>
 				<p>This guide outlines the TODOs that need to be implemented in the codebase.</p>
-				<h3 id="task-1-implement-the-togglefavorite-method-in-favoritestore">
-					Task 1: Implement the toggleFavorite method in FavoriteStore
+				<h3 id="task-1-implement-the-isfavorite-computed-property-in-eventcard">
+					Task 1: Implement the isFavorite computed property in EventCard
+				</h3>
+				<p><strong>File</strong>: <code>src/components/EventCard.vue</code></p>
+				<p>
+					<strong>Description</strong>: Implement the <code>isFavorite</code> computed property to determine if the
+					current event is a favorite.
+				</p>
+				<h3 id="task-2-implement-the-togglefavorite-method-in-favoritestore">
+					Task 2: Implement the toggleFavorite method in FavoriteStore
 				</h3>
 				<p><strong>File</strong>: <code>src/stores/FavoriteStore.ts</code></p>
 				<p>
@@ -28,22 +36,15 @@
 					favorite status by adding or removing its ID from the <code>favoriteEvents</code> array in the state.
 				</p>
 
-				<h3 id="task-2-implement-the-favoriteevents-computed-property-in-favoritespage">
-					Task 2: Implement the favoriteEvents computed property in FavoritesPage
+				<h3 id="task-3-implement-the-favoriteevents-computed-property-in-favoritespage">
+					Task 3: Implement the favoriteEvents computed property in FavoritesPage
 				</h3>
 				<p><strong>File</strong>: <code>src/views/FavoritesPage.vue</code></p>
 				<p>
 					<strong>Description</strong>: Implement the <code>favoriteEvents</code> computed property to return an array
 					of event objects that are marked as favorites.
 				</p>
-				<h3 id="task-3-implement-the-isfavorite-computed-property-in-eventcard">
-					Task 3: Implement the isFavorite computed property in EventCard
-				</h3>
-				<p><strong>File</strong>: <code>src/components/EventCard.vue</code></p>
-				<p>
-					<strong>Description</strong>: Implement the <code>isFavorite</code> computed property to determine if the
-					current event is a favorite.
-				</p>
+
 				<h2 id="testing-your-implementation">Testing Your Implementation</h2>
 				<p>After implementing each task:</p>
 				<ol>
@@ -59,17 +60,4 @@
 
 <script setup lang="ts">
 	import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-	import EventCard from '@/components/EventCard.vue';
-	import { useEventStore } from '@/stores/EventStore';
-	import { onMounted, computed } from 'vue';
-	const eventStore = useEventStore();
-
-	const isFavorite = computed(() => {
-		// TODO: Implement this
-		return false;
-	});
-
-	onMounted(() => {
-		eventStore.initializeEvents();
-	});
 </script>
