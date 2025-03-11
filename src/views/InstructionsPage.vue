@@ -27,24 +27,17 @@
 					<strong>Description</strong>: Implement the <code>toggleFavorite</code> method to toggle an event&#39;s
 					favorite status by adding or removing its ID from the <code>favoriteEvents</code> array in the state.
 				</p>
-				<h3 id="task-2-implement-the-isfavorite-computed-property-in-eventspage">
-					Task 2: Implement the isFavorite computed property in EventsPage
-				</h3>
-				<p><strong>File</strong>: <code>src/views/EventsPage.vue</code></p>
-				<p>
-					<strong>Description</strong>: Implement the <code>isFavorite</code> computed property to determine if an event
-					is a favorite based on the FavoriteStore.
-				</p>
-				<h3 id="task-3-implement-the-favoriteevents-computed-property-in-favoritespage">
-					Task 3: Implement the favoriteEvents computed property in FavoritesPage
+
+				<h3 id="task-2-implement-the-favoriteevents-computed-property-in-favoritespage">
+					Task 2: Implement the favoriteEvents computed property in FavoritesPage
 				</h3>
 				<p><strong>File</strong>: <code>src/views/FavoritesPage.vue</code></p>
 				<p>
 					<strong>Description</strong>: Implement the <code>favoriteEvents</code> computed property to return an array
 					of event objects that are marked as favorites.
 				</p>
-				<h3 id="task-4-implement-the-isfavorite-computed-property-in-eventcard">
-					Task 4: Implement the isFavorite computed property in EventCard
+				<h3 id="task-3-implement-the-isfavorite-computed-property-in-eventcard">
+					Task 3: Implement the isFavorite computed property in EventCard
 				</h3>
 				<p><strong>File</strong>: <code>src/components/EventCard.vue</code></p>
 				<p>

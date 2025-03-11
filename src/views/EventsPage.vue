@@ -17,13 +17,8 @@
 	import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 	import EventCard from '@/components/EventCard.vue';
 	import { useEventStore } from '@/stores/EventStore';
-	import { onMounted, computed } from 'vue';
+	import { onMounted } from 'vue';
 	const eventStore = useEventStore();
-
-	const isFavorite = computed(() => {
-		// TODO: Implement this
-		return false;
-	});
 
 	onMounted(() => {
 		eventStore.initializeEvents();
