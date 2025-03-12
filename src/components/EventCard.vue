@@ -1,5 +1,5 @@
 <template>
-	<div class="event ion-activatable ripple-parent">
+	<div class="event ion-activatable ripple-parent" @click="favoriteStore.toggleFavorite(props.event.id)">
 		<ion-ripple-effect></ion-ripple-effect>
 		<div class="event-thumbnail"></div>
 
@@ -12,7 +12,7 @@
 		<ion-icon
 			:icon="isFavorite ? heart : heartOutline"
 			class="event-favorite-button"
-			@click="favoriteStore.toggleFavorite(props.event.id)"></ion-icon>
+			></ion-icon>
 	</div>
 </template>
 
